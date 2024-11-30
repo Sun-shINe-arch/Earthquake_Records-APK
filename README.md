@@ -1,5 +1,5 @@
 
-# Quake_Record 🌍
+# EarthQuake_Record 🌍
 
 **Quake_Record** is an Android application that fetches and displays earthquake data from the USGS (United States Geological Survey) website. The app enables users to view earthquake records, customize search parameters, and stay informed about recent seismic activity.
 
