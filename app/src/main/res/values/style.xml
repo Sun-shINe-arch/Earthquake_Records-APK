@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Define a rounded shape appearance -->
+    <style name="ShapeAppearanceOverlay">
+        <item name="cornerSize">16dp</item> <!-- Rounded corners with 16dp radius -->
+    </style>
+
+</resources>

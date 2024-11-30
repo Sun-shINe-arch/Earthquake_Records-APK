@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wp4469311" />
+
+    <!-- Scrollable Form Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.85"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Title Text -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="16dp"
+                android:text="Earthquake Records"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Minimum Magnitude Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Minimum Magnitude"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- Minimum Magnitude Input Field -->
+            <EditText
+                android:id="@+id/min_magnitude"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/grey"
+                android:hint="Enter minimum magnitude"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <!-- Start Date Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="Start Date"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- Start Date Input Field -->
+            <EditText
+                android:id="@+id/start_date"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/grey"
+                android:clickable="true"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="Select start date"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <!-- End Date Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="End Date"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- End Date Input Field -->
+            <EditText
+                android:id="@+id/end_date"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/grey"
+                android:clickable="true"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="Select end date"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <!-- Submit Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/primary"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:shapeAppearance="@style/ShapeAppearanceOverlay" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
