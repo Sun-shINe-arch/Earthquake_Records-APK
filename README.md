@@ -54,7 +54,7 @@
 
 1. Launch the app.  
 2. On the home screen:
-   - View earthquakes from the last 30 days.  
+   - View earthquakes records of ALL time.  
    - See notifications for recent seismic events.
 3. Use the filter options to customize the data by magnitude and date range.  
 4. Enjoy a seamless experience with reliable error handling for network issues.  
